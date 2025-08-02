@@ -1,0 +1,154 @@
+* {
+
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: inter, sans-serif;
+}
+
+h1{
+  font-style: italic;
+}
+
+.header {
+
+display: flex;
+height: 120px;
+width: 100;
+gap: 11px;
+justify-content: center;
+align-items: center;
+box-shadow: 0px 1px
+
+}
+
+.header > img{
+  width: 80px;
+}
+
+.header > h1 {
+  font-weight: 400;
+}
+
+.main{
+  padding: 30px 10px 30px;
+}
+
+.addingredient {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: centere ;
+}
+
+.addingredient > input {
+
+  border-radius: 6px;
+  flex-grow: 1;
+  padding: 9px 13px;
+  min-width:150px;
+  max-width: 400px ;
+}
+
+.addingredient > button {
+
+  border-radius: 6px;
+  background-color: palevioletred;
+  color: white;
+  border-color: none;
+  width: 150px;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+
+}
+
+.addingredient > button:hover {
+  background-color: plum;
+}
+
+.addingredient > button::before {
+
+  content: "+";
+  margin-right: 5px;
+
+}
+
+.butt {
+
+  background-color: black;
+  color: white;
+  height: 2rem;
+  width: 2rem;
+}
+
+.butt > button {
+background-color: blue;
+color: white;
+width: 4rem;
+height: 2rem;
+
+}
+
+.butt > h1 {
+  background-color: black;
+}
+
+.display {
+display: grid;
+justify-content: center;
+}
+
+.display-div {
+  display: flex;
+  gap: 5rem;
+  background-color: skyblue;
+  width: 50rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+
+}
+
+.display-div > div {
+
+  display:grid;
+  
+  border-radius: 10px;
+ 
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe-button {
+height: 50px;
+width: 120px;
+border-radius: 10px;
+background-color: palevioletred ;
+outline: none;
+border: none;
+box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+
+.recipe-button:hover{
+  background-color: plum;
+}
+
+.get-recipe {
+
+  gap: 50px;
+}
+
+.reci-div{
+  display: flex;
+  gap: 25px;
+}
+
+.reci-div > img{
+  width: 80px;
+  height: 90px;
+}
+
