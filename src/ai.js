@@ -4,7 +4,7 @@ import { HfInference } from '@huggingface/inference'
 const SYSTEM_PROMPT = `you are an ai assistant that receives a list of ingredienrs that a user has and suggests a recipe they could make with some or all  of those ingredients . you dont neeed to use every ingredient they mention in your recipe. the recipe can include additional ingredients they didn't mention and, but try not to include too many extra ingredients . Format your response in markdown to make it easier to render to a web page `
 
 
-const hf = new HfInference("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");
+const hf = new HfInference("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");
  
 
 
