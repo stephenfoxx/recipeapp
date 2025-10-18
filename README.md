@@ -1,12 +1,83 @@
-# React + Vite
+# 🍳 Chef-flow Recipe Generator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A smart recipe generator that helps users turn simple ingredients into complete recipes — powered by AI.  
+Users can add ingredients, and the app generates a detailed recipe with step-by-step cooking instructions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## Expanding the ESLint configuration
+- 🥕 **Ingredient-based Recipe Generation** – Users input any ingredients they have, and the app creates a recipe idea around them.
+- 🤖 **AI-Powered Suggestions** – Integrates with the **Spoonacular API** (or AI model like Mistral/Claude) to generate creative and relevant recipes.
+- 🧾 **Dynamic Recipe Display** – Recipes are displayed in a clear, easy-to-follow format.
+- ⬇️ **Auto Scroll Feature** – Smoothly scrolls down to the generated recipe for better user experience.
+- 🧱 **Modular Component Design** – Built with reusable React components.
+- 💬 **Accessible UI** – Includes `aria-label` attributes for improved accessibility.
+- 🎨 **Responsive Design** – Works seamlessly across desktop and mobile screens.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- React (with Hooks and Functional Components)
+- HTML5 / CSS3  
+- JavaScript (ES6+)
+
+**APIs:**
+- [Spoonacular API](https://spoonacular.com/food-api) for recipe generation  
+- *(Optional)* [Claude API](https://claude.ai) or Mistral for AI-generated instructions
+
+---
+
+## 📂 Folder Structure
+
+📦 ai-recipe-generator
+├── src/
+│ ├── Components/
+│ │ ├── ClaudeRecipe.jsx
+│ │ ├── Header.jsx
+| | ├── ingredientsLists.jsx
+| | ├── Main.jsx
+│ ├── pages/
+│ ├── ai.js
+│ ├── App.jsx
+│ ├── index.js
+│ └── App.css
+└── README.md
+
+yaml
+Copy code
+
+---
+
+## ⚙️ Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/ai-recipe-generator.git
+   cd ai-recipe-generator
+Install dependencies
+
+bash
+Copy code
+npm install
+Set up your API key
+
+Create a .env file in the root directory.
+
+Add your Spoonacular (or other API) key:
+
+bash
+Copy code
+REACT_APP_SPOONACULAR_KEY=your_api_key_here
+Start the development server
+
+bash
+Copy code
+npm run dev
+or
+
+bash
+Copy code
+npm start
